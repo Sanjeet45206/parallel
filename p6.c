@@ -22,5 +22,7 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
     return 0;
 }
+cl p8.c msmpi.lib
+    mpiexec -n 4 p8.exec
 gcc p6.c -o p6 -lmsmpi
 mpiexec -n 2 ./p6
