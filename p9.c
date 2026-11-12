@@ -24,4 +24,7 @@ int main(int argc, char** argv) {
     MPI_Finalize();
     return 0;
 }
+
+cl p8.c msmpi.lib
+    mpiexec -n 4 p8.exec
 gcc p9.c -o p9 -lmsmpi	mpiexec -n 4 ./p9
