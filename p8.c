@@ -21,5 +21,9 @@ int main(int argc, char **argv) {
     return 0;
 }
 
+
+cl p8.c msmpi.lib
+    mpiexec -n 4 p8.exec
+    or
 gcc p8.c -o p8 -lmsmpi
  mpiexec -n 4 ./p8 
