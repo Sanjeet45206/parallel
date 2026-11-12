@@ -57,3 +57,6 @@ int main() {
     free(a); free(b);
     return 0;
 }
+
+gcc -fopenmp p1.c -o p1
+./p1	

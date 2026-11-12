@@ -28,3 +28,6 @@ int main() {
     printf("\nSpeedup: %.2fx\n", ts / tp);
     return 0;
 }
+
+gcc -fopenmp p4.c -o p4
+./p4

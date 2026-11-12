@@ -19,3 +19,5 @@ int main(int argc, char **argv) {
     MPI_Finalize();
     return 0;
 }
+
+gcc p9.c -o p9 -lmsmpi	mpiexec -n 4 ./p9
